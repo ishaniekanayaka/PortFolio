@@ -50,6 +50,12 @@ body {
     font-size: 18px;
 }
 
+.nav-links a:hover {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 /* Hamburger Menu (hidden by default) */
 .hamburger {
     display: none;
@@ -752,16 +758,20 @@ body {
     .navbar ul {
         display: none;
         flex-direction: column;
-        background-color: #222;
+        /*background-color: #222;*/
+        background-color: goldenrod;
         position: absolute;
-        top: 60px;
+        top: 150px;
         right: 0;
         width: 100%;
         text-align: center;
+        z-index: 100;
+        margin-top: 20px;
     }
 
     .nav-links.active {
         display: flex;
+
     }
 
     .hamburger {
