@@ -85,3 +85,14 @@ body {
     margin: 10px 0;
 }
 
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
