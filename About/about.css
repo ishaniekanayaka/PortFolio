@@ -65,8 +65,23 @@ body {
     color: white;
 }
 
-
 /* Checkbox trick for toggling menu */
 #menuToggle {
     display: none;
 }
+
+/* When the checkbox is checked, the nav-links become visible */
+#menuToggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+}
+
+#menuToggle:checked ~ .nav-links li {
+    margin: 10px 0;
+}
+
