@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'Arial', sans-serif;
     color: #fff;
     background-image: url("../Assests/images/b.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    /*background-color: black;*/
+
 }
 
 .navbar {
@@ -95,4 +98,103 @@ body {
     .hamburger {
         display: block;
     }
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+
+
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: -100px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #f4b41a;
+    margin-bottom: 2rem;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+h1 span {
+    color: #fff;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 40px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.experience {
+    position: relative;
+    left: 250px;
+    top: -50px;
+}
+
+.experience button {
+    background-color: #f4b41a;
+    padding: 20px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+    position: absolute;
+
+    transform: translateX(-50%);
+}
+
+.btn {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn span {
+    font-size: 34px;
+    color: white;
+}
+
+.read-more {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 2px solid #f4b41a;
+    padding: 10px 30px;
+    color: #f4b41a;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 220px;
+}
+
+.read-more:hover  {
+    background-color: #fff;
+    color: #333;
 }
