@@ -488,3 +488,14 @@ p {
         color: #333;
     }
 }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
