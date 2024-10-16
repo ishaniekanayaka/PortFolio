@@ -195,20 +195,23 @@ p {
         max-width: 425px;
         align-items: center;
         text-align: center;
-
     }
 
-    h1{
+    h1 {
         font-size: 36px;
         align-items: center;
         right: -130px;
-        margin: 60px 0 0 0 ;
+        margin: 60px 0 0 0;
     }
 
-    p{
+    p {
         margin-top: 18px;
-        /*font-size: 24px;*/
         font-size: 1.2rem;
+        width: 100%; /* Make paragraph take up full width */
+        text-align: center; /* Center-align the text */
+        margin-left: auto; /* Horizontally center the paragraph */
+        margin-right: auto; /* Horizontally center the paragraph */
+        padding: 0 5px; /* Add padding for a bit of spacing */
     }
 
     img {
@@ -223,7 +226,6 @@ p {
         margin-left: 0;
         position: relative;
         left: 0;
-
     }
 
     .experience button {
@@ -236,19 +238,19 @@ p {
         color: white;
     }
 
-    .btn span{
+    .btn span {
         color: white;
-        font-size: 25px ;
+        font-size: 25px;
     }
 
     .read-more {
         margin-left: 0;
         text-align: center;
-        padding: 12px 10px;
+        padding: 8px 10px;
         font-size: 22px;
         width: 50%;
+        font-weight: bold;
     }
-
 }
 
 
@@ -262,17 +264,21 @@ p {
         text-align: center;
     }
 
-    h1{
+    h1 {
         font-size: 42px;
         align-items: center;
         right: -130px;
-        margin: 70px 0 0 0 ;
+        margin: 70px 0 0 0;
     }
 
-    p{
+    p {
         margin-top: 30px;
-        /*font-size: 24px;*/
         font-size: 1.4rem;
+        width: 100%;  /* Make the paragraph take up the full width */
+        text-align: center; /* Ensure text is center-aligned */
+        margin-left: auto; /* Center the paragraph horizontally */
+        margin-right: auto; /* Center the paragraph horizontally */
+        padding: 0 5px; /* Add padding on the left and right for better spacing */
     }
 
     img {
@@ -299,9 +305,9 @@ p {
         color: white;
     }
 
-    .btn span{
+    .btn span {
         color: white;
-        font-size: 28px ;
+        font-size: 28px;
     }
 
     .read-more {
@@ -312,6 +318,7 @@ p {
         width: 50%;
     }
 }
+
 
 /* Tablet (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
