@@ -360,3 +360,9 @@ body {
         margin-left: 20px;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .service-card {
+        width: 28%;
+    }
+}
