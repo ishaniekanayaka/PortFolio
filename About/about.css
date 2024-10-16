@@ -400,3 +400,91 @@ p {
         color: #333;
     }
 }
+
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    .container {
+        display: flex;
+        gap: 2rem;
+        max-width: 1200px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        min-width: 150px;
+        border-radius: 10px;
+        margin-top: -100px;
+    }
+
+    .content {
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: #f4b41a;
+        margin-bottom: 2rem;
+        margin-top: 40px;
+        margin-left: 150px;
+    }
+
+    h1 span {
+        color: #fff;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-left: 40px;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+    .experience {
+        position: relative;
+        left: 250px;
+        top: -50px;
+    }
+
+    .experience button {
+        padding: 20px 30px;
+        font-size: 24px;
+        background-color: black;
+        border: 5px solid goldenrod;
+        color: white;
+        border-radius: 10px;
+        margin-top: 1rem;
+        cursor: pointer;
+        position: absolute;
+
+        transform: translateX(-50%);
+    }
+
+    .btn span {
+        font-size: 26px;
+        font-weight: bold;
+        color: goldenrod;
+    }
+
+    .read-more {
+        margin-top: 1rem;
+        background-color: transparent;
+        border: 2px solid #f4b41a;
+        padding: 10px 30px;
+        color: #f4b41a;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 220px;
+    }
+
+    .read-more:hover{
+        background-color: #fff;
+        color: #333;
+    }
+}
