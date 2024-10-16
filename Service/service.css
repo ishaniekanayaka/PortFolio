@@ -343,11 +343,20 @@ body {
         font-size: 1.5rem;
         margin: 20px 20px auto 20px;
         text-align: center;
-
     }
-
 
     .hire-me {
         font-size: 1.2rem;
+    }
+}
+
+/* Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service-card {
+        width: 45%;
+    }
+
+    .services h2 {
+        margin-left: 20px;
     }
 }
