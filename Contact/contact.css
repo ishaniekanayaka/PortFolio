@@ -111,3 +111,64 @@ body {
         display: block;
     }
 }
+
+.contact-section {
+    text-align: center;
+    padding: 50px 30px 50px 30px;
+    background: black;
+}
+
+.contact-section h1 {
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-section h2 span {
+    color: #f1c40f;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px; /* Added padding inside the form */
+    border: 2px solid goldenrod; /* Added a golden border */
+    border-radius: 10px; /* Optional: Make the corners rounded */
+}
+
+.contact-form input,
+
+.contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-form button:hover {
+    background-color: goldenrod;
+}
+
+
