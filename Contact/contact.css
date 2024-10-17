@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    /*background: rgb(103,103,103);
+    background: linear-gradient(180deg, rgba(103,103,103,1) 0%, rgba(52,52,52,1) 40%, rgba(1,1,1,1)100%);*/
+    color: #fff;
+    height: 730px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 20px;
+    position: sticky;
+    top: 0; /* Make the navbar stick to the top */
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+    width: 100%;
+}
+
+
+.logo {
+    color: white;
+    font-size: 24px ;
+    font-weight: bold;
+    margin-left: 40px;
+
+}
+
+.logo span{
+    color: goldenrod;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hamburger Menu (hidden by default) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Checkbox trick for toggling menu */
+#menuToggle {
+    display: none;
+}
+
+/* When the checkbox is checked, the nav-links become visible */
+#menuToggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+}
+
+#menuToggle:checked ~ .nav-links li {
+    margin: 10px 0;
+}
+
+
