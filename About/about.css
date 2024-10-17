@@ -695,16 +695,20 @@ education*/
 
 @media(max-width:767px){
     .timeline{
-        width:100%;
+        width:90%;
         padding-bottom:0;
     }
     h1{
-        font-size:40px;
+        font-size:28px;
         text-align:center;
+    }
+
+    p{
+        font-size: 15px;
     }
     .timeline:before{
         left:20px;
-        height:100%;
+        height:90%;
     }
     .timeline ul li:nth-child(odd),
     .timeline ul li:nth-child(even)
@@ -725,5 +729,26 @@ education*/
         top:-30px;
         left:50px;
         right:inherit;
+    }
+}
+
+.skills{
+    .education{
+        padding:0;
+        margin:0;
+        font-family: 'Montserrat', sans-serif;
+        /*background-color: black;*/
+        background: linear-gradient(
+                to bottom,
+                #8D631A,   /* Orange-brown */
+                #805A18,  /* Orange-tan */
+                #73511A,  /* Tan */
+                #654816,  /* Dark tan */
+                #563E15,  /* Rich brown */
+                #473414,  /* Muted brown */
+                #382A12,  /* Brown */
+                #281F10,  /* Dark brown */
+                black
+        );
     }
 }
