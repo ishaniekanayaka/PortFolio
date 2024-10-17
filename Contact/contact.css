@@ -278,3 +278,34 @@ footer {
 .footer-bottom p {
     margin: 5px 0;
 }
+
+
+/* Mobile devices (up to 600px wide) */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-text p {
+        font-size: 14px;
+    }
+
+    .social-links img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
