@@ -338,3 +338,14 @@ footer {
         text-align: center;
     }
 }
+
+/* Larger devices (1025px and above) */
+@media (min-width: 1025px) {
+    .contact-info {
+        justify-content: space-between;
+    }
+
+    .footer-text p {
+        font-size: 16px;
+    }
+}
