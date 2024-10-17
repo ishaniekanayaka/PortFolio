@@ -501,3 +501,14 @@ footer {
         height: 28px;
     }
 }
+
+/* Laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-info {
+        justify-content: space-evenly;
+    }
+
+    .section {
+        text-align: center;
+    }
+}
