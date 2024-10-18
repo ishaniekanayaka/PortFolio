@@ -965,6 +965,146 @@ education*/
     }
 }
 
+/*gallery css*/
+.gallery{
+
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+}
+
+.gallery h1{
+    font-size: 48px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.gallery span{
+    color: goldenrod;
+}
+
+.wrapper {
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.items {
+    display: flex;
+    gap: 0.4rem;
+    perspective: calc(var(--index) * 35);
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items in the container */
+}
+
+.item {
+    width: calc(var(--index) * 4);
+    height: calc(var(--index) * 15);
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(.5);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+    position: relative; /* Added position relative for ::before and ::after */
+    overflow: hidden; /* Prevent overflow of images */
+}
+
+.item img {
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Maintain the aspect ratio */
+    object-fit: cover; /* Crop images to fit */
+    transition: transform 1s ease; /* Smooth transition for images */
+}
+
+.item:hover img {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+.item::before,
+.item::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: calc(var(--index) * -1);
+}
+
+.item::after {
+    left: calc(var(--index) * -1);
+}
+
+.items .item:hover {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+}
+
+/* Right */
+.items .item:hover + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+
+.items .item:hover + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
+    z-index: -2;
+}
+
+.items .item:hover + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+
+.items .item:hover + * + * + * + * {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+
+/* Left */
+.items .item:has( + :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.items .item:has( + * + :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has( + * + * + :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has( + * + * + * + :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}
+
+.items .item:active,
+.items .item:focus {
+    width: 28vw;
+    filter: inherit;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 .45vw;
+}
 /*footer css*/
 
 footer {
@@ -1107,3 +1247,5 @@ footer {
         font-size: 16px;
     }
 }
+
+
