@@ -119,7 +119,7 @@ body {
 }
 
 .contact-section h1 {
-    color: #f1c40f;
+    color: goldenrod;
     margin-bottom: 10px;
     margin-top: -20px;
 }
@@ -131,7 +131,7 @@ body {
 }
 
 .contact-section h2 span {
-    color: #f1c40f;
+    color: goldenrod;
 }
 
 .contact-form {
@@ -216,7 +216,7 @@ footer {
 }
 
 .footer-container h1 {
-    color: #ffba00;
+    color: goldenrod;
     margin-bottom: 30px;
 }
 

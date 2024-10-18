@@ -6,9 +6,9 @@
 }
 body{
     background-color: black;
+    font-family: Arial, sans-serif;
 }
 .about-me{
-    font-family: 'Arial', sans-serif;
     color: #fff;
     height: 100%;
     background-image: url("../Assests/images/b.jpeg");
@@ -16,8 +16,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*background-color: black;*/
-
+    padding-bottom: 40px;
 }
 
 .navbar {
@@ -32,14 +31,6 @@ body{
     width: 100%;
 }
 
-/*.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 20px 20px;
-    position: sticky;
-}*/
 
 .logo {
     color: white;
@@ -92,7 +83,6 @@ body{
     width: 100%;
     align-items: center;
 
-
 }
 
 .image img {
@@ -109,9 +99,9 @@ body{
     /*margin-left: 100px;*/
 }
 
-h1 {
+ h1 {
     font-size: 50px;
-    color: #f4b41a;
+    color: goldenrod;
     margin-bottom: 2rem;
     margin-top: 40px;
     margin-left: 150px;
@@ -141,6 +131,7 @@ h1 span {
     background-color: black;
     padding: 20px 30px;
     border: 4px solid goldenrod;
+    box-shadow: 0 4px 8px goldenrod;
     border-radius: 10px;
     margin-top: 1rem;
     cursor: pointer;
@@ -174,8 +165,8 @@ h1 span {
 }
 
 .read-more:hover{
-    background-color: #fff;
-    color: #333;
+    color: white;
+    font-weight: bold;
 }
 
 /* Hamburger Menu (hidden by default) */
@@ -216,13 +207,13 @@ h1 span {
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 40px;
         align-items: center;
         right: -130px;
         margin: 60px 0 0 0;
     }
 
-   .about-me p {
+    .about-me p {
         margin-top: 18px;
         font-size: 1.2rem;
         width: 100%; /* Make paragraph take up full width */
@@ -264,8 +255,8 @@ h1 span {
     .read-more {
         margin-left: 0;
         text-align: center;
-        padding: 8px 10px;
-        font-size: 22px;
+        padding: 8px 8px;
+        font-size: 14px;
         width: 50%;
         font-weight: bold;
     }
@@ -315,7 +306,7 @@ h1 span {
 
     .experience button {
         padding: 12px 10px;
-        font-size: 25px;
+        font-size: 22px;
         margin-left: 20px;
         margin-bottom: 60px;
         background-color: black;
@@ -328,13 +319,24 @@ h1 span {
         font-size: 28px;
     }
 
-    .read-more {
+    /*.read-more {
         margin-left: 0;
         text-align: center;
         padding: 10px 6px;
         font-size: 15px;
         width: 50%;
+    }*/
+    .read-more {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 20px; /* Adjusted padding for better size */
+        font-size: 15px;
+        width: 60%; /* Increased width for larger button */
+        max-width: 150px; /* Optional: limit the maximum width */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
     }
+
 }
 
 
@@ -362,7 +364,7 @@ h1 span {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 42px;
         color: #f4b41a;
         margin-bottom: 2rem;
         margin-top: 30px;
@@ -418,9 +420,11 @@ h1 span {
         border-radius: 30px;
         cursor: pointer;
         font-size: 18px;
-        /*margin-left: 220px;*/
-        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto; /* Adds automatic margin to center */
+        display: block; /* Ensures the button behaves like a block element */
     }
+
 
     .read-more:hover{
         background-color: #fff;
@@ -546,7 +550,8 @@ h1 span {
 /*
 education*/
 .education{
-    padding:0;
+    /*padding:0;*/
+    padding-bottom: 20px;
     margin:0;
     font-family: 'Montserrat', sans-serif;
     /*background-color: black;*/
@@ -565,13 +570,13 @@ education*/
 }
 
 .edu{
-    font-size:48px;
+    font-size:36px;
     text-align:center;
     color: white;
     justify-content: center;
 }
 .edu span{
-    font-size:48px;
+    font-size:36px;
     text-align:center;
     color: goldenrod;
 }
@@ -621,7 +626,7 @@ education*/
 
 .education p {
     margin-bottom: 1rem;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.6;
     margin-left: 40px;
     font-weight: bold;
@@ -657,7 +662,7 @@ education*/
     color: black;
     text-align: center;
     font-weight:600;
-    font-size: 36px;
+    font-size: 28px;
 }
 .timeline ul li p{
     margin:10px 0 0;
@@ -676,11 +681,12 @@ education*/
     right:-165px;
     margin:0;
     padding:8px 16px;
-    background: goldenrod;
-    border: 3px solid black;
+    background: transparent;
+    box-shadow: 0 4px 8px goldenrod;
+    border: 2px solid black;
     color:#fff;
     border-radius:18px;
-    box-shadow:0 0 0 3px goldenrod;
+
 }
 .timeline ul li:nth-child(even) .time
 {
@@ -689,11 +695,11 @@ education*/
     left:-165px;
     margin:0;
     padding:8px 16px;
-    background:goldenrod;
-    border: 3px solid black;
+    background:transparent;
+    border: 2px solid black;
     color:#fff;
     border-radius:18px;
-    box-shadow:0 0 0 3px goldenrod;
+    box-shadow: 0 4px 8px goldenrod;
 }
 
 @media(max-width:1000px)
@@ -712,8 +718,10 @@ education*/
         font-size:28px;
         text-align:center;
     }
-
-     p{
+    h3{
+        font-size:20px;
+    }
+    p{
         font-size: 15px;
     }
     .timeline:before{
@@ -742,26 +750,26 @@ education*/
     }
 }
 
-.skills{
+/*.skills{
     .education{
         padding:0;
         margin:0;
         font-family: 'Montserrat', sans-serif;
-        /*background-color: black;*/
+        !*background-color: black;*!
         background: linear-gradient(
                 to bottom,
-                #8D631A,   /* Orange-brown */
-                #805A18,  /* Orange-tan */
-                #73511A,  /* Tan */
-                #654816,  /* Dark tan */
-                #563E15,  /* Rich brown */
-                #473414,  /* Muted brown */
-                #382A12,  /* Brown */
-                #281F10,  /* Dark brown */
+                #8D631A,   !* Orange-brown *!
+                #805A18,  !* Orange-tan *!
+                #73511A,  !* Tan *!
+                #654816,  !* Dark tan *!
+                #563E15,  !* Rich brown *!
+                #473414,  !* Muted brown *!
+                #382A12,  !* Brown *!
+                #281F10,  !* Dark brown *!
                 black
         );
     }
-}
+}*/
 
 
 
