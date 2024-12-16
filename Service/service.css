@@ -514,3 +514,37 @@ footer {
         font-size: 16px;
     }
 }
+
+
+/* Animation for the heading */
+.services h2 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animation for the paragraph */
+.services p {
+    animation: fadeInUp 1s ease-in-out 0.5s;
+}
+
+/* Animation for the service cards */
+.service-card:nth-child(1) {
+    animation: fadeInUp 1s ease-in-out 0.5s;
+}
+.service-card:nth-child(2) {
+    animation: fadeInUp 1s ease-in-out 0.5s;
+}
+.service-card:nth-child(3) {
+    animation: fadeInUp 1s ease-in-out 0.5s;
+}
+
+/* Keyframes for the animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

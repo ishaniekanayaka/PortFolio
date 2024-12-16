@@ -79,8 +79,6 @@ body {
 }
 
 
-
-
 /* Checkbox trick for toggling menu */
 #menuToggle {
     display: none;
@@ -493,7 +491,7 @@ body {
     .info-section .cta-button:hover{
         background-color: goldenrod;
         color: black;
-        border: 3px solid white;
+        border: 1px solid white;
     }
 
     .info-section p{
