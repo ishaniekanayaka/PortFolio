@@ -790,4 +790,79 @@ body {
     .hamburger {
         display: block;
     }
+
+}
+
+/* Animation for the heading */
+.info-section h2 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animation for the subheading */
+.info-section h3 {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Animation for the paragraph */
+.info-section p {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animation for the image */
+.image-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for the social icons */
+.social-section a img {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animation for the CTA button */
+.cta-button {
+    animation: pulse 2s infinite;
+}
+
+/* Keyframes for the animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
