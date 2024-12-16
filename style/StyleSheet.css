@@ -8,7 +8,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #111;
     color: #fff;
-    height: 730px;
+    /*height: 730px;*/
+    height: auto;
 }
 
 
@@ -235,8 +236,8 @@ body {
         border-left: none;
         border-top: none;
     }
-
 }
+
 
 @media (min-width: 375px) and (max-width: 424px) {
     .info-section h2 { font-size: 1.7rem;
@@ -323,8 +324,8 @@ body {
         border-left: none;
         border-top: none;
     }
-
 }
+
 
 @media (min-width: 425px) and (max-width: 767px) {
     .info-section h2 { font-size: 2rem;
@@ -413,9 +414,8 @@ body {
         border-left: none;
         border-top: none;
     }
-
-
 }
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .info-section h2 { font-size: 2rem;
